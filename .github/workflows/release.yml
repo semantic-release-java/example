@@ -65,7 +65,7 @@ jobs:
       # deploy to some repo, if needed
 
       - name: Create Release
-        uses: softprops/action-gh-release@v1
+        uses: softprops/action-gh-release@v2
         id: create_release
         with:
           tag_name: ${{ steps.current_tag.outputs.tag }}
